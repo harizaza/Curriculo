@@ -1,0 +1,134 @@
+* {
+    padding: 0%;
+    margin: 0%;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    font-family: Arial, sans-serif;
+}
+
+.global {
+    background-color: rgb(13, 145, 150);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    width: 100vw;
+    gap: 20px;
+    padding: 20px;
+}
+
+.content {
+    background-color: hwb(197 59% 9%);
+    padding: 35px;
+    border-radius: 30px;
+    flex-direction: column;
+    gap: 30px;
+    width: 100%;
+    max-width: 800px;
+}
+
+h1{
+    font-size: 20px;
+}
+
+input{
+    padding: 5px;
+    border: 0;
+    border-radius: 5px;
+}
+
+.data,
+.dados-escolares,
+.dados-pessoais,
+.sexo,
+.regiao {
+    margin-bottom: 20px; 
+}
+
+.data {
+    display: flex;
+    justify-content: space-between;
+    line-height: 100%;
+    gap: 20px;
+}
+
+.dados-escolares{
+    display: flex;
+    justify-content: space-between;
+}
+
+.dados-escolares input{
+    width: 20vw;
+}
+
+.dados-pessoais{
+    display: flex;
+    justify-content: left;
+}
+
+.dados-pessoais div{
+    width: 100%;
+}
+
+.dados-pessoais input{
+    width: 100%;
+}
+
+.regiao input {
+    width: 100%;
+    max-width: 250px;
+}
+
+.sexo {
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+}
+
+.sexo div {
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+}
+
+.regiao{
+    display: flex;
+    justify-content: space-between;
+}
+
+.regiao input{
+    width: 25vw;
+}
+
+#enviar{
+    width: 100%;
+}
+
+@media (max-width: 768px) {
+    .content {
+        padding: 20px;
+    }
+
+    .dados-escolares input{
+        width: 30vw;
+    }
+
+    .sexo {
+        gap: 15px;
+    }
+
+    #enviar {
+        width: 100%;
+    }
+}
+
+@media (max-width:400px) {
+    *{
+        font-size: 10px;
+    }
+}

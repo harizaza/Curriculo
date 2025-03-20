@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currículo</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="global">
+        <div class="content">
+            <div class="data">
+            <div>
+                <h1>Curriculo</h1>
+            </div>
+
+            <div>
+                <input type="date">
+            </div>
+        </div>
+
+        <h1>Dados Escolares</h1>
+        <div class="dados-escolares">
+            <div>
+                <input type="text" placeholder="Nome da Escola">
+            </div>
+
+            <div>
+                <input type="number" placeholder="CPF">
+            </div>
+        </div>
+        
+        <h1>Dados Pessoais</h1>
+        <div class="dados-pessoais">
+            <div>
+                <input type="text" placeholder="Nome completo">
+            </div>
+        </div>
+
+        <h1>Regiao</h1>
+        <div class="regiao">
+            <div>
+                <input type="text" placeholder="Pais" list="Pais">
+                <datalist id="Pais">
+                    <option value="Brazil"> Brasil </option>
+                    <option value="United States"> Estados Unidos </option>
+                    <option value="Italy"> Italia </option>
+                </datalist>
+            </div>
+
+            <div>
+                <input type="text" placeholder="Estado" list="Estado">
+                <datalist id="Estado">
+                    <option value="CE">Ceara</option>
+                    <option value="RN">Rio Grande do Norte</option>
+                    <option value="BA">Bahia</option>
+                </datalist>
+            </div>
+
+            <div>
+                <input type="text" placeholder="Cidade" list="Cidade">
+                <datalist id="Cidade">
+                    <option value="Vn">Vila Nova</option>
+                    <option value="Rdd">Redonda</option>
+                    <option value="THE BEST BEACH">Barreiras </option>
+                </datalist>
+            </div>
+        </div>
+
+        <div class="sexo">
+            <div>
+                <h1>Masculino</h1>
+                <input type="radio" name="Sexo">
+            </div> 
+            <div>
+                <h1>Feminino</h1>
+                <input type="radio" name="Sexo">
+            </div>
+            <div>
+                <h1>OUTROS</h1>
+                <input type="radio" name="Sexo">
+            </div>
+        </div>
+
+        <input type="submit" value="Enviar" id="enviar">
+
+        </div>
+    </div>
+</body>
+</html>
